@@ -55,7 +55,7 @@ The focus of this repository is on **practical testing tools, defect management,
 - Nmap, fping, nbtscan  
 - XAMPP  
 - Virtual Machines  
-- Performance Testing Tools  
+- Performance Testing Tools (Apache JMeter)
 - Defect Tracking & Reporting Systems  
 
 ---
