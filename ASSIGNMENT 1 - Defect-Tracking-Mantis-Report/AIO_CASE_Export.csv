@@ -1,0 +1,255 @@
+﻿S.NO.,Key,Title,Description,Pre-condition,Datasets/Examples,BDDKeyword,Steps,Data,Expected Result,Folder,Requirements,Owner,Priority,Status,Type,Release,Component,Estimated Effort(in mins),Tags,Automation Status,Automation Owner,Automation Key
+1,SCRUM-TC-1,Guest User Browsing Functionality,This test case verifies that guest users can browse the video game selection on the website and that no options for reserving or signing out games are available to them.,"The user is not logged in, and the application's homepage is accessible.",,,"
+1. Go to the Online Video Game Rental Store Website.onli
+2. Check that a user can access and view the list of video games available for browsing.
+3. Ensure there are no options for reserving or signing out games for guest users.
+4. Click on multiple games and ensure game details are displayed correctly.",,"Guest users should be able to browse the video game selection, but they should not see options for reserving or signing out games.",,,shivani varu,Medium,Draft,Functional,,,,,Manual,shivani varu,
+2,SCRUM-TC-2,Registered User Login,This test case checks if registered users can successfully log in to the application using their email and password and are redirected to their account dashboard.,"The user is registered with a valid email and password, and the application's homepage is accessible.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.","Email : shivi10@gmail.com (Link: mailto:shivi10@gmail.com ) 
+Password : Shivi123@S","The user should be able to log in successfully, and their account dashboard should be displayed.",,,shivani varu,Critical,Draft,Functional,,,,,Manual,shivani varu,
+3,SCRUM-TC-3,Game Search by Title,"To verify that the search functionality by title, ensuring that it returns the correct game results when users search by game title.",The Online Video Game Rental Store's website homepage is accessible.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Use the search feature and enter a game title.
+7. Click the ""Search"" button.
+8. Check that the search results include the specified game title.
+9. Click on the game title.",,"Searching by game title should return the relevant game name, and the details should be accurate.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+4,SCRUM-TC-4,Sorting Search Results by Availability,"To Verify that if the application can correctly sort the list of games by availability in ascending order, and whether reserving a game reduces its availability.
+","The application's homepage is accessible, and games are available for",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Click on the ""Sort by Availability"" option.
+8. Check that the list of games is sorted in ascending order of availability.
+9. Reserve a game with low availability.",,"Games should be sorted by availability, and reserving a game should reduce its availability.",,,shivani varu,Medium,Draft,Functional,,,,,Manual,shivani varu,
+5,SCRUM-TC-5," Registered User Reservation","This test case verifies that registered users can reserve games, making them unavailable for other users, and that the reserved games appear in the user's list.","The user is logged in, and games are available for reservation.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"" button.
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button
+6. Browse available games.
+7. Click the ""Reserve"" button for a game with availability.
+8. Verify that the game is reserved and no longer available for others.
+9. Check the user's reserved games list.",,"The user should be able to reserve games, and the reserved games should appear in their list.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+6,SCRUM-TC-6,New Game Rental Duration,To ensures that new games have a rental duration of three days and that they are automatically deleted from the user's computer upon expiry.,"The user is logged in, and a new game is available for rental.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games
+7. Choose a new game for rental.
+8. Verify that the rental duration is 3 days.
+9. Wait for the rental period to expire.",,"New games should have a 3-day rental duration, and they should be automatically deleted upon expiry.",,,shivani varu,High,Draft,Functional,,,,,,,
+7,SCRUM-TC-8,Payment with Credit Card,"To verifies that users can complete payment for a game using a credit card, and they can access the game after successful payment.",The user is logged in and has added a game to their cart.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Add a game to the cart.
+8. Proceed to the payment page.
+9. Enter valid credit card details.
+10. Submit the payment.",,"The payment should be processed successfully, and the user should be able to access the downloaded game.",,,shivani varu,Critical,Draft,Functional,,,,,Manual,shivani varu,
+8,SCRUM-TC-9,Payment with PayPal,To confirms that users can complete payment for a game using PayPal and access the game after successful payment.,The user is logged in and has added a game to their cart.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Add a game to the cart.
+8. Proceed to the payment page.
+9. Select the PayPal payment option.
+10. Follow the PayPal login and payment process.
+",,"The payment through PayPal should be processed successfully, and the user should be able to access the downloaded game.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+9,SCRUM-TC-10,Maximum Number of User Allowance,To verifiy that the system's ability to handle 2500 simultaneous users and monitors system performance.,The system is in working condition.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Simulate the presence of 2500 total users on the system simultaneously.",,"The system should handle 2,500 simultaneous users without significant performance degradation or errors.",,,shivani varu,High,Draft,Performance,,,,,Manual,shivani varu,
+10,SCRUM-TC-11,Cross-Browser Compatibility on Windows 10,To check the compatibility of the website with various Windows 10 desktop browsers.,The website is accessible via Windows 10 desktop browsers.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Access the website from Windows 10 desktop browsers, including Chrome, Firefox, and Edge.",,"The website should be compatible with the specified Windows 10 desktop browsers, and all features should work as intended.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+11,SCRUM-TC-12,Cross-Browser Compatibility on Apple iPad,To check the compatibility of the website with Apple iPad and Safari browser.,The website is accessible via Apple iPad with Safari.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Access the website from an Apple iPad using Safari.
+",,"The website should be compatible with Apple iPad and Safari, and all features should work as intended.",,,shivani varu,Medium,Draft,Functional,,,,,Manual,shivani varu,
+12,SCRUM-TC-13,Security Testing - Personal Information Data Leak Prevention,To check attempts to access personal and financial information without authorization to verify data leak prevention.,The website is in working condition.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Attempt to access personal information of a user without proper authorization.",,The application should not allow unauthorized access to another user's personal information. The application should only display the information of the currently logged-in user.,,,shivani varu,Critical,Draft,Security,,,,,Manual,shivani varu,
+13,SCRUM-TC-14,Download Link Availability,To verify whether registered users are provided with download links for games they have signed out.,"The user is logged in, and they have signed out a game.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Sign out a game.
+7. Check for a download link.
+8. Verify that the user receives a download link upon the signed-out game.",,"The user should receive a download link for the game they have signed out of, either via email or in their user dashboard.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+14,SCRUM-TC-15,Test for Maximum Game Rentals,This test case verifies that registered users cannot exceed the maximum allowed game rentals (three titles) at a given time.,"The user is logged in, and they have already rented three games.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Attempt to rent a fourth game.
+8. Verify that the system prevents the user from renting the fourth game.
+9. Check the user's rented games list.",,"The system should prevent the user from renting a fourth game, and the user's rented games list should still contain the three previously rented games.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+15,SCRUM-TC-16,Automatic Game Deletion on Expiry,To verify that games are automatically deleted from the user's computer after the rental period expires.,"The user has rented a game, and the rental period has expired.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Rent a game with an expiry date.
+8. Wait until the game's expiry date has passed.
+9. Check the user's computer for the presence of the game.",,"After the rental period expires, the game should be automatically deleted from the user's computer, and it should no longer available on the user's computer, indicating it has been automatically deleted.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+16,SCRUM-TC-17,User's Ability to View Reserved Games,To verifies that registered users can view the list of games they have reserved.,"The user is logged in, and they have reserved games.",,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Navigate to the account or dashboard.
+8. Locate the section that displays reserved games.
+9. Verify that the list of reserved games is displayed.",,The user should be able to view the list of games they have reserved in their account or dashboard.,,,shivani varu,Medium,Draft,Functional,,,,,Manual,shivani varu,
+17,SCRUM-TC-18,User's Ability to Update Personal Information,"To confirms that registered users can successfully update their personal information, such as their name, email, or password.",The user is logged in and accessing their profile or settings.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Navigate to the profile or settings section.
+8. Update personal information, such as name, email, or password.
+9. Save the changes.
+10. Verify that the changes are reflected in the profile.",,"The user's personal information should be successfully updated, and the updated data should be displayed in the user's profile.",,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+18,SCRUM-TC-19,Game Search by Maker,To verify that if all users can search for games by maker.,The user is on the game search page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Enter a game maker's name in the search bar.
+7. Click the search button.
+8. Check that the search results include the specified game maker name.
+9. Click on the name of game maker .
+
+",,The search results should include games made by the specified maker.,,,shivani varu,High,Draft,Functional,,,,,Manual,shivani varu,
+19,SCRUM-TC-20,Game Search by Date Published/Created,To verify that if all users can search for games by the date they were published or created.,The user is on the game search page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Enter a date (in the required format) in the search bar.
+7. Click the search button.",,The search results should include games published or created on the specified date.,,,shivani varu,Low,Draft,Functional,,,,,,,
+20,SCRUM-TC-21,Game Search by Cost to Rent,To verify that all users can search for games by their cost to rent.,The user is on the game search page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Enter a cost value in the search bar.
+7. Click the search button.
+",,The search results should include games with the specified rental cost.,,,shivani varu,Low,Draft,Functional,,,,,Manual,shivani varu,
+21,SCRUM-TC-22,Sorting Search Results by Name of Item,To verify that if the system allows users to sort search results by the name of the game.,The user is on the search results page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Click on searchbar to a search for games.
+7. Click on the ""Name of Item"" sorting option.
+",,The search results should be sorted by the name of the game in ascending or descending order as specified.,,,shivani varu,Low,Draft,Functional,,,,,Manual,shivani varu,
+22,SCRUM-TC-23,Sorting Search Results by Maker,To verify that the system allows users to sort search results by the maker of the game.,The user is on the search results page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Click on searchbar to search for games.
+7. Click on the ""Maker"" sorting option.
+8. Verify that the search results are sorted by the maker of the game.",,The search results should be sorted by the maker of the game in ascending or descending order as specified.,,,shivani varu,Low,Draft,Functional,,,,,Manual,shivani varu,
+23,SCRUM-TC-24,Sorting Search Results by Date Published,To verify that if the system allows users to sort search results by the date a game was published or created.,The user is on the search results page.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Clicl on searchbar to search for games.
+7. Click on the ""Cost"" sorting option.
+",,The search results should be correctly sorted by the date of publication or creation based on the selected sorting option (ascending or descending).,,,shivani varu,Low,Draft,Functional,,,,,Manual,shivani varu,
+24,SCRUM-TC-25," User's Ability to View Personal Information",To verify that registered users can view their personal information within the system.,The user is logged in as a registered user.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Navigate to the profile or settings section.
+8. Update personal information, such as name, email, or password.
+9. Save the changes.
+10. Verify that the changes are reflected in the profile.",,"The user should be able to view their personal information, including their name, email, address, and contact details, within the user profile section.",,,shivani varu,High,Draft,Functional,,,,,,,
+25,SCRUM-TC-27,Game Availability Status Update,To Verify that the game's status becomes available for the next registered user after expiry.,User is logged in and rented a game with an expired rental period.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Browse available games.
+7. Rent a game with an expiry date.
+8. Wait until the game's expiry date has passed.
+9. Check the game's availability for rental by other users.",,"The game's status is updated to ""available,"" indicating it can be rented by the next registered user.",,,shivani varu,Medium,Draft,Functional,,,,,Manual,shivani varu,
+26,SCRUM-TC-28,Security Testing - Financial Information Data Leak Prevention,To Verify that the application's security measures prevent unauthorized access to user's financial information.,User is logged into the application.,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Navigate to the payment or financial section.
+7. Attempt to access another user's financial information (For Ex: credit card details, PayPal account).",,The application should not allow unauthorized access to another user's financial information. Financial data should be protected and only accessible to authorized users.,,,shivani varu,High,Draft,Security,,,,,Manual,shivani varu,
+27,SCRUM-TC-29,"Sorting Search Results by Cost
+","
+1. 
+",,,,"
+1. Go to the Online Video Game Rental Store Website.
+2. Click on the ""Log In"".
+3. Enter a valid registered user email.
+4. Enter a valid password.
+5. Click the ""Login"" button.
+6. Clicl on searchbar to search for games.
+7. Click on the ""Date Published"" sorting option.",,The search results should be correctly sorted by the cost based on the selected sorting option (ascending or descending).,,,shivani varu,,Draft,,,,,,,,

@@ -1,0 +1,20 @@
+ 192.168.40.226 - ip address
+Shivani_Varu - hostname
+
+Telnet 192.168.56.1 4444
+
+test command
+
+metrics
+
+exit
+
+shutdown
+
+An ACC report is generally given to the supplier's marketing department through
+the on-site system test engineer
+
+It advocates frequent "releases" in short
+development cycles to improve productivity
+and introduce checkpoints at which new
+customer requirements can be adopted
